@@ -1,0 +1,97 @@
+<!-- All HTML files start with -->
+    <!-- It tells the browser to use the newest html available -->
+<!DOCTYPE html>
+<!-- All page content must be contained in the html element -->
+    <!-- we added language to equal English -->
+<html lang="en">
+    <!-- the head element contains all the meta data -->
+        <!-- it can also contain links to your css and javascript file -->
+    <head>
+        <!-- Adds the title to the tab -->
+        <title>CatPhotoApp</title>
+
+    </head>
+    <!-- Contain all the visible contents on the page -->
+    <body>
+        <!-- h1 element is used to define headings -->
+            <!-- It goes from h1 - h6 from biggest to smallest -->
+        <h2>CatPhotoApp</h2>
+        <!-- main element specifies the main content of a document -->
+            <!-- it should be unique to the document -->
+            <!-- shouldn't contain any content that is repeated accross documents like sidebars, nav links, copyright info, site logos, and search forms -->
+        <main>
+            <h3>Cat Photos</h3>
+            <!-- p element used to create paragraph text -->
+                <!-- usually the main text that people read -->
+            <!-- TODO: Add link to cat photos -->
+                <!-- anchor element for links -->
+                    <!-- href attribute is for web-address or directory -->
+                    <!-- we added the # sign to href as a placeholder since we don't have a real website but still functions as a link -->
+            <p>Click here to view more <a href="#" target="_blank">cat photos</a>.</p>
+            
+            <!-- img element doesn't have a closing tag (single tag) -->
+                <!-- depending on the element some require or have different attributes -->
+                    <!-- for img, it requires a src with a value (web-address or directory), and an alt attribute with a value and it makes it more accessible --> 
+                <!-- added an anchor tag to an image to make it a link -->
+            <a href="#" target="_blank"><img src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+            <h3>Cat Lists</h3>
+            <div class="lists">
+                <p>Things cats <em>love</em>:</p>
+                <!-- unorded list -->
+                <ul>
+                    <li>cat nip</li>
+                    <li>laser pointers</li>
+                    <li>lasagna</li>
+                </ul>
+                <img src="lasagna.jpg" alt="lasagna">
+                <p>Things cats <strong>hate</strong>:</p>
+                <!-- A list that has numbers, or some type of ordered list (A, B, C...etc) -->
+                <ol>
+                    <li>flea treatment</li>
+                    <li>thunder</li>
+                    <li>other cats</li>
+                </ol>
+            </div>
+            <img src="group_of_cats.jpg" alt="group of cats">
+            <!-- Forms -->
+                <!-- adding action allows submission of data -->
+                    <!-- in this example we don't actually submit the form -->
+                    <!-- that requires us to watch another tutorial on how to handle data -->
+            <form action="/submit-cat-photo">
+                <!-- input elements do not require a closing tag -->
+                    <!-- required attribute ensures a filed is completed -->
+                    <!-- all radio button groups should have the same name to ensure the user can only click on one radio -->
+                    <!-- surround radio buttons with labels -->
+                        <!-- adding for labels set to the input tag's id is normal and should be done.  It allows certain technologies to group things -->      
+                <label for="indoor">
+                    <input id="indoor" type="radio" name="indoor-outdoor" checked> Indoor
+                </label>  
+                <br> 
+                <label for="outdoor">
+                    <input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor
+                </label>   
+                <br>
+                <!-- checkboxes -->
+                <label for="loving">
+                    <input id="loving" type="checkbox" name="personality" checked> Loving
+                </label>
+                <br>
+                <label for="lazy">
+                    <input id="lazy" type="checkbox" name="personality"> Lazy
+                </label>
+                <br>
+                <label for="energetic">
+                    <input id="energetic" type="checkbox" name="personality"> Energetic
+                </label>
+                <br>
+                <input type="text" placeholder="cat photo URL" required>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <p><small>No Copyright - <a href="https://freecodecamp.org">freeCodeCamp.org</a></small></p>
+        </footer>
+    </body>
+</html>
+<!-- TODO: Look at Hostinger to host your webpages.  This does cost money, but it's relatively cheap and easy to deploy. -->
