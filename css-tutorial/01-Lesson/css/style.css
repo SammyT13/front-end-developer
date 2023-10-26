@@ -1,0 +1,11 @@
+/* Break-down 
+1. p is the Selector
+2. color and font-size are Property
+3. 64px and purple are Property value
+4. font-size: 64px & color: purple are Declaration
+5. the entire thing is a rule set
+*/
+p {
+    font-size: 64px;
+    color: purple;
+}
