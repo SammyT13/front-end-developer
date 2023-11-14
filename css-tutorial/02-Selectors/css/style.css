@@ -1,0 +1,78 @@
+/* Universal Selector */
+    /* This is not typically used, but important to know and understand. */
+    /* This is more for a CSS reset. */
+
+* {
+    font-family: monospace;
+}
+
+/* Element Selector */
+    /* Element selectors will select all selectors of that type and apply CSS to them. */
+
+body {
+    font-size: 22px;
+}
+
+/* Grouping Selectors */
+    /* If we don't add a comma then CSS would be looking for nested selectors, but in this case there isn't an 'h2' nested in an 'h1' selector */
+h1, h2 {
+    color: blue;
+}
+
+p {
+    color:purple;
+}
+
+/* Nested Selectors */
+    /* Below doesn't really make sense. In this instance it would be best to create a class to make the code more organized and reusable. */
+
+/* p span {
+    text-transform: uppercase;
+    background-color: gold;
+} */
+
+.highlight {
+    text-transform: uppercase;
+    background-color: yellow;
+}
+
+/* Class Selector */
+    /* It starts with a '.' */
+    /* In CSS classes can be used more than once */
+    /* We have to name the class in html */
+    /* The are the most common selector */
+
+.gray {
+    color: gray;
+}
+
+/* ID Selector */
+    /* It starts with a '#' */
+    /* It is the most specific selector */
+    /* ID's should only be used once and unique */
+    /* ID's are rarely used in CSS */
+
+#second {
+    font-style: italic;
+}
+
+/* Remember CSS is cascading. */
+    /* The last rule will be read, and override any previous rules. */
+    /* Having a Class Selector will prevent rules being overridden, and the order wouldn't matter like it does with Element Selector. */
+
+/* Inheritance */
+    /* It's very useful.  It helps keep things DRY (don't repeat yoursel) */
+    /* Not every Element Selector will inherit the parent rule, but typically anything with font will be inherited. */
+        /* Example: if using the Body Selector, the font-size could be sent once and all the other tags will inherit the font-size */
+            /* But if I was to add a border rule in the Body Selector the other tags in the element would not inherit that rule. */
+    /* Normally you want your inheritance in the body element, or even better in an html element. */
+    /* Inheritance can occur in any element, but not all rules will always apply. */
+
+/* Trouble Shooting */
+    /* Using '!important' in CSS will override any rule in place */
+    /* This should never be used, and should only be applied to a small percentages of CSS */
+    /* Normally when you see '!important' in CSS it usually means it is not organized correctly. */
+
+    /* Specificity Calculator */
+        /* Will allow help see why certain rules are not applied */
+        /* It provides a percentage, and 100 is what you want. */
