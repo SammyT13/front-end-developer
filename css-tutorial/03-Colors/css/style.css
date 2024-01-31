@@ -2,4 +2,10 @@ body {
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
+    background: #e0ccbe;
+    color: #3c3633;
+}
+
+p {
+    color: rgb(60, 54, 51);
 }
