@@ -1,0 +1,57 @@
+/* *** Absolute Length Units ***
+    - Absolute Length Units, like px, cm, mm, Q, and etc will always stay the same size
+        - It cannot be changed by a user
+    - The browser default font-size is 16px
+        - it can be change to any pixel
+        - it's important to remember this because 1 em or rem is equivalent to 16px
+            - this can help determine how big you want something
+    - Typically you don't want to use px for font-size in the html element
+        - Reasons Why:
+            - You take the option (choice) away from users changing the font-size (small/large) in their browser settings, because px is absolute (doesn't change relative to anything)
+    - When to use px (an absolute length)
+        - Headings
+            */
+/* *** Relative Length Units
+    - Percentages: presents a franction of a value
+        - Remember you're setting it relative to the parent
+    - rem: relates to the font size of the root element
+    - em: relaes to the font size of the parent element
+    - When using relative length units, we must consider the root and parent element
+        - Especially when it's a big project
+    - When would we use em's instead of rem's
+        - Probably using for margin and padding
+        - Typically rem and em could be used together like the example below in h1 element
+            - could be used in a button setting.
+    - ch: the advance measure (width) of the glyph "0" of the elements font (determines the character's width)
+        - this could be used when dealing with paragraphs
+        - can help us with columns
+            */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+}
+
+h1 {
+    border: 2px dashed red;
+    width: 50%; 
+    font-size: 3rem;
+    padding: 0.5em;
+}
+
+main {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 2rem;
+    width: 40ch;
+}
