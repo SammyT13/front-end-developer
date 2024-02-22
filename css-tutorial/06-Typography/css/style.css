@@ -1,0 +1,26 @@
+
+/* 
+
+Typography is the way that text is arranged and presented.
+
+*/
+
+body {
+    padding: 10%;
+    /* Using rem takes the sizing of the root element into account
+     since the standard font-size is 16px setting the font-size to
+     2rem changes the font-size to 32px
+     */
+    font-size: 2rem;
+}
+
+/* input, button {
+    font: inherit;
+} */
+
+/* Web-Safe fonts: */
+
+p {
+    line-height: 1.5;
+    font-family: "Kode Mono", monospace;
+}
