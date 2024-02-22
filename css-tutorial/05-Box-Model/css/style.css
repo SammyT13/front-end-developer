@@ -1,0 +1,47 @@
+/* Below is a CSS reset
+    - This allows for more control
+    - border-box allows us to calculate what we're adding
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    /* Border has some many styles that can be utilized to customize the border (border-top-color or style or width, etc)
+    */
+    border: 10px double red;
+    /* border-top: 5px solid green;
+    border-right: 10px dotted yellow; */
+    font-size: 1.5rem;
+    margin: 1.5em;
+    /* This is the order of margin and padding if just using margin
+    margin-top: 1.5em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    margin-left: 2em; */
+    padding: 1.5em;
+    /* outline is not part of the box model, because it doesn't take up space or calculated
+    */
+    outline: 5px solid purple;
+    outline-offset: 5px;
+}
+
+.circle {
+    /* using auto in margin after the first attribute will center the box left and right
+    */
+    margin: 3rem auto;
+    background-color: gold;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    /* to make a circle (calculate a circle)
+        - we must set the border-radius to half of the width and height
+    */
+    border-radius: 50px;
+    /* END of Circle calculation */
+    outline: 2px solid red;
+    outline-offset: 0.25rem;
+}

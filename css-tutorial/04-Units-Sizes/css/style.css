@@ -15,7 +15,7 @@
     - Percentages: presents a franction of a value
         - Remember you're setting it relative to the parent
     - rem: relates to the font size of the root element
-    - em: relaes to the font size of the parent element
+    - em: relates to the font size of the parent element
     - When using relative length units, we must consider the root and parent element
         - Especially when it's a big project
     - When would we use em's instead of rem's
