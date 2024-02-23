@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: hsl(207, 44%, 49%);
+}
+
+/* Below is a psuedo-class for the a (anchor) tag
+    - each tag has some type a psuedo-class that can be a rule
+    - pseudo-class format: tag:name
+    - the order of the psuedo-class must always be considered
+        - if we move visited above the a selector than the visited would take priority
+        - consider the order you want to have them.
+    - below is the typical order when dealing with psuedo-class
+*/
+
+a:visited {
+    color: purple;
+}
+
+/* using the a:focus psuedo-class provides accessibility
+    - a user could not be using the mouse, instead they use the 'tab' button to navigate the page
+*/
+
+a:hover, a:focus {
+    color:  hsl(207, 44%, 49%, 0.8);
+    background: gold;
+}
+
+a:active {
+    color: red;
+}
